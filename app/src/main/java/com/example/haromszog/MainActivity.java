@@ -56,6 +56,34 @@ public class MainActivity extends AppCompatActivity {
         gammaNumb.setText(eredmeny.getGamma().toString());
     }
 
+    public void clrAll(View v){
+        aNumb.setText("");
+        bNumb.setText("");
+        cNumb.setText("");
+        alfaNumb.setText("");
+        betaNumb.setText("");
+        gammaNumb.setText("");
+    }
+
+    public void clrA(View v){
+        aNumb.setText("");
+    }
+    public void clrB(View v){
+        bNumb.setText("");
+    }
+    public void clrC(View v){
+        cNumb.setText("");
+    }
+    public void clrAlfa(View v){
+        alfaNumb.setText("");
+    }
+    public void clrBeta(View v){
+        betaNumb.setText("");
+    }
+    public void clrGamma(View v){
+        gammaNumb.setText("");
+    }
+
     public class Eredmeny{
         Double a;
         Double b;
