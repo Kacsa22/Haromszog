@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/betaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="β:"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/alfaTxt"
+        app:layout_constraintTop_toBottomOf="@+id/alfaTxt" />
+
+    <TextView
+        android:id="@+id/alfaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="α:"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/cTxt"
+        app:layout_constraintTop_toBottomOf="@+id/cTxt" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="500px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/haromszog"
+        tools:srcCompat="@drawable/haromszog" />
+
+    <TextView
+        android:id="@+id/aTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="a:"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/gammaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="γ:"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/betaTxt"
+        app:layout_constraintTop_toBottomOf="@+id/betaTxt" />
+
+    <TextView
+        android:id="@+id/cTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="c:"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/bTxt"
+        app:layout_constraintTop_toBottomOf="@+id/bTxt" />
+
+    <TextView
+        android:id="@+id/bTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="b:"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/aTxt"
+        app:layout_constraintTop_toBottomOf="@+id/aTxt" />
+
+    <EditText
+        android:id="@+id/aNumb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/aTxt"
+        app:layout_constraintEnd_toStartOf="@+id/aClr"
+        app:layout_constraintStart_toEndOf="@+id/aTxt"
+        app:layout_constraintTop_toTopOf="@+id/aTxt" />
+
+    <EditText
+        android:id="@+id/bNumb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/bTxt"
+        app:layout_constraintEnd_toStartOf="@+id/bClr"
+        app:layout_constraintStart_toEndOf="@+id/bTxt"
+        app:layout_constraintTop_toTopOf="@+id/bTxt" />
+
+    <EditText
+        android:id="@+id/cNumb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/cTxt"
+        app:layout_constraintEnd_toStartOf="@+id/cClr"
+        app:layout_constraintStart_toEndOf="@+id/cTxt"
+        app:layout_constraintTop_toTopOf="@+id/cTxt" />
+
+    <EditText
+        android:id="@+id/alfaNumb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/alfaTxt"
+        app:layout_constraintEnd_toStartOf="@+id/alfaClr"
+        app:layout_constraintStart_toEndOf="@+id/alfaTxt"
+        app:layout_constraintTop_toTopOf="@+id/alfaTxt" />
+
+    <EditText
+        android:id="@+id/betaNumb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/betaTxt"
+        app:layout_constraintEnd_toStartOf="@+id/betaClr"
+        app:layout_constraintStart_toEndOf="@+id/betaTxt"
+        app:layout_constraintTop_toTopOf="@+id/betaTxt" />
+
+    <EditText
+        android:id="@+id/gammaNumb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/gammaTxt"
+        app:layout_constraintEnd_toStartOf="@+id/gammaClr"
+        app:layout_constraintStart_toEndOf="@+id/gammaTxt"
+        app:layout_constraintTop_toTopOf="@+id/gammaTxt" />
+
+    <Button
+        android:id="@+id/aClr"
+        android:layout_width="61dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="8dp"
+        android:text="X"
+        app:layout_constraintBottom_toBottomOf="@+id/aNumb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/aNumb" />
+
+    <Button
+        android:id="@+id/gammaClr"
+        android:layout_width="61dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="8dp"
+        android:text="X"
+        app:layout_constraintBottom_toBottomOf="@+id/gammaNumb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/betaNumb" />
+
+    <Button
+        android:id="@+id/bClr"
+        android:layout_width="61dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="8dp"
+        android:text="X"
+        app:layout_constraintBottom_toBottomOf="@+id/bNumb"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/cClr"
+        android:layout_width="61dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="8dp"
+        android:text="X"
+        app:layout_constraintBottom_toBottomOf="@+id/cNumb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cNumb" />
+
+    <Button
+        android:id="@+id/alfaClr"
+        android:layout_width="61dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="8dp"
+        android:text="X"
+        app:layout_constraintBottom_toBottomOf="@+id/alfaNumb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/alfaNumb" />
+
+    <Button
+        android:id="@+id/betaClr"
+        android:layout_width="61dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="8dp"
+        android:text="X"
+        app:layout_constraintBottom_toBottomOf="@+id/betaNumb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/betaNumb" />
+
+    <Button
+        android:id="@+id/szamolBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="click"
+        android:text="Számol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gammaNumb" />
+
+    <Button
+        android:id="@+id/clearAllBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:text="Adatok törlése"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/szamolBtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
