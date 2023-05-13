@@ -100,7 +100,10 @@ public class MainActivity extends AppCompatActivity {
             this.beta= konvertal(beta);
             this.gamma= konvertal(gamma);
             if (!hiba) {
-                szamol();
+                ellenoriz(this.a,this.b,this.c);
+                if (!hiba){
+                    szamol();
+                }
             }
         }
 
@@ -130,6 +133,21 @@ public class MainActivity extends AppCompatActivity {
             gamma = Math.toDegrees(Math.acos((((a*a) + (b*b)) - (c*c)) / (2*a*b)));
             alfa = Math.toDegrees(Math.asin((Math.sin(Math.toRadians(gamma))) * a/c));
             beta = 180 - alfa- gamma;
+        }
+
+        public void ellenoriz(Double a, Double b, Double c){
+            if ((a+b)<=c){
+                hiba = true;
+            }
+            if ((a+c)<=b){
+                hiba = true;
+            }
+            if ((b+c)<=b){
+                hiba = true;
+            }
+            if (hiba){
+                Toast.makeText(MainActivity.this, "Bármely két oldal összegének nagyobbnak kell lennie a harmadiknál!!!",Toast.LENGTH_SHORT).show();
+            }
         }
 
         public Double getA() {
